@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Rhyno Ev</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="seo3.css">
+
+</head>
+
+<body>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="red bike.png" alt="Rhyno se03_lite" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <h1 class="mb-4">Book your Rhyno ev </h1>
+        <p class="mb-4"> “Let's Elevate Your Ride Experience With Rhyno – Where Superiority Meets Style."</p>
+        <div class="form-group">
+          <label for="variant">Pick your variant</label>
+          <select id="variant" style="font-size: 14px; height: 40px; width: 500px;" onchange="window.location.href = this.options[this.selectedIndex].getAttribute('data-href')">
+            <option value="seo3 lite red.html" data-href="seo3 lite red.html ">seo3 Lite</option>
+            <option value="seo3 red.html" data-href="seo3 red.html">seo3</option>
+            <option value="seo3 maxred.html" data-href="seo3 maxred.html">seo3 max</option>
+        
+          </select>
+        </div>
+        <div id="colorpicker">
+          <label for="color">Pick your colour</label><br>
+          <select id="colors" style="font-size: 14px; height: 40px; width: 500px;" onchange="window.location.href = this.options[this.selectedIndex].getAttribute('data-href')">
+            <option value="Red" data-href="seo3 lite red.html">Red</option>
+            <option value="Black" data-href="seo3 lite black.html">Black</option>
+            <option value="Blue" data-href="seo3 lite blue.html">Blue</option>
+          </select>
+        </div><br>
+        <table id="table features">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Specification</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Battery Type</td>
+                    <td>LFP with 1500 cycles</td>
+                </tr>
+                <tr>
+                    <td>Balancing</td>
+                    <td>Active Balancing</td>
+                </tr>
+                <tr>
+                    <td>Water Resistance</td>
+                    <td>Waterproof (IP67)</td>
+                </tr>
+                <tr>
+                    <td>Battery Model</td>
+                    <td>Rhyno SE03 Lite</td>
+                </tr>
+                <tr>
+                    <td>Battery Warranty</td>
+                    <td>3 years</td>
+                </tr>
+                <tr>
+                    <td>Charging Time</td>
+                    <td>3 hours (12A)</td>
+                </tr>
+                <tr>
+                    <td>Motor Power</td>
+                    <td>1500W</td>
+                </tr>
+                <tr>
+                    <td>Electronics Warranty</td>
+                    <td>1 year</td>
+                </tr>
+                <tr>
+                    <td>Max Range (@30km/h)</td>
+                    <td>100 km</td>
+                </tr>
+                <tr>
+                    <td>Max Range (@45km/h)</td>
+                    <td>90 km</td>
+                </tr>
+                <tr>
+                    <td>Max Range (@full speed)</td>
+                    <td>70 km</td>
+                </tr>
+                <tr>
+                    <td>Other Key Benefits</td>
+                    <td>Fire-safe Battery, Range prediction, Comfortable ride, Stable and safe</td>
+                </tr>
+            </tbody>
+        </table><br>
+        <div class="form-group">
+          <label for="booking-amount">Booking amount</label>
+          <input type="text" class="form-control" id="booking-amount" value="₹19,999" readonly>
+        </div>
+        <button class="btn btn-primary btn-block" id="book-now">Buy Now</button>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script > 
+    document.getElementById('book-now').addEventListener('click', function() {
+  var variant = document.getElementById('variant').value;
+  var color = document.getElementById('color').value;
+  var bookingAmount = document.getElementById('booking-amount').value;
+
+  // Perform any necessary logic or API calls here
+  console.log('Variant:', variant);
+  console.log('Color:', color);
+  console.log('Booking Amount:', bookingAmount);
+
+  // Redirect to the next step or display a confirmation message
+  window.location.href = 'confirmation.html';
+});
+
+  </script>
+</body>
+</html>

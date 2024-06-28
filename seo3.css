@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body{
+ font-family: 'Poppins', sans-serif;
+}
+   .form-control {
+ border-radius: 0;
+}
+
+.btn-primary {
+ background-color: #000;
+ border-color: #000;
+}
+
+.btn-primary:hover {
+ background-color: #333;
+ border-color: #333;
+}
+#table features{
+   border-collapse: collapse;
+   text-align: center;
+}

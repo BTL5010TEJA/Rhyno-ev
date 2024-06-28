@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Rhyno Ev</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="comparision.css">
+</head>
+
+<body>
+  <div class="container my-5">
+    <div class="row">
+        <div style="width: 100%; text-align: center;">
+            <img src="group bikes.png" alt="Image 1" width="500" height="300" style="display: inline-block; margin-right: 20px;">
+            <img src="group bikes 1.png" alt="Image 2" width="500" height="300" style="display: inline-block;">
+          </div><br>
+       
+
+     <table id="table features">
+          <thead>
+
+                <tr>
+                  <th>Specification</th>
+                  <th>RhynoSE03 Lite</th>
+                  <th>RhynoSE03</th>
+                  <th>RhynoSE03 Max</th>
+                </tr>
+                <tr>
+                  <td>Battery</td>
+                  <td>1.8 Kwh</td>
+                  <td>2.7 Kwh</td>
+                  <td>2.7 Kwh</td>
+                </tr>
+                <tr>
+                  <td>Battery Features</td>
+                  <td>LFP with 1500 cycles, Active Balancing, Waterproof (IP67)</td>
+                  <td>LFP with 1500 cycles, Active Balancing, Waterproof (IP67)</td>
+                  <td>LFP with 1500 cycles, Active Balancing, Waterproof (IP67)</td>
+                </tr>
+                <tr>
+                  <td>Battery Warranty</td>
+                  <td>3 years</td>
+                  <td>3 years</td>
+                  <td>3 years</td>
+                </tr>
+                <tr>
+                  <td>Charging Time</td>
+                  <td>3 hours (12A)</td>
+                  <td>4 hours (12A)</td>
+                  <td>4 hours (12A)</td>
+                </tr>
+                <tr>
+                  <td>Motor</td>
+                  <td>1500 W</td>
+                  <td>1500 W</td>
+                  <td>2000 W</td>
+                </tr>
+                <tr>
+                  <td>Max Speed</td>
+                  <td>55 km/h</td>
+                  <td>55 km/h</td>
+                  <td>65 km/h</td>
+                </tr>
+                <tr>
+                  <td>Warranty on Electronics</td>
+                  <td>1 year</td>
+                  <td>1 year</td>
+                  <td>1 year</td>
+                </tr>
+                <tr>
+                  <td>Max Range (@30 km/h)</td>
+                  <td>100 km</td>
+                  <td>150 km</td>
+                  <td>120 km</td>
+                </tr>
+                <tr>
+                  <td>Max Range (@45 km/h)</td>
+                  <td>90 km</td>
+                  <td>110 km</td>
+                  <td>100 km</td>
+                </tr>
+                <tr>
+                  <td>Max Range (@ full speed)</td>
+                  <td>60 km</td>
+                  <td>90 km</td>
+                  <td>80 km</td>
+                </tr>
+                <tr>
+                  <td>Other Key Benefits</td>
+                  <td>Fire-safe battery, Range prediction, Comfortable ride, Stable and safe</td>
+                  <td>Fire-safe battery, Range prediction, Comfortable ride, Stable and safe</td>
+                  <td>Fire-safe battery, Range prediction, Comfortable ride, Stable and safe</td>
+                </tr>
+                <tr>
+                  </tr>
+              
+          </tbody>
+      </table> 
+      
+       <div class="form-group"  >
+        </div>
+        <button class="btn btn-primary btn-block" id="book-now">Buy Now</button>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script > 
+    document.getElementById('book-now').addEventListener('click', function() {
+  var variant = document.getElementById('variant').value;
+  var color = document.getElementById('color').value;
+  var bookingAmount = document.getElementById('booking-amount').value;
+
+  // Perform any necessary logic or API calls here
+  console.log('Variant:', variant);
+  console.log('Color:', color);
+  console.log('Booking Amount:', bookingAmount);
+
+  // Redirect to the next step or display a confirmation message
+  window.location.href = 'confirmation.html';
+});
+
+  </script>
+</body>
+</html>
